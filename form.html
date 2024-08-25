@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+           body {
+            font-family: "Lucida Sans", sans-serif;
+            padding: 0;
+            margin: 0;
+            }
+    
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            height: 100vh;
+            width: 100%;
+            }
+        .firsty {
+            background-color: #fffcf8;
+            }
+        .altlogo {
+            height: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        .secondy {
+            grid-column: 2;
+            margin: 20px 150px 20px 150px;
+        }
+        form {
+            input[type=text], input[type=password], input[type=email], input[type=tel], input[type=date], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+        button[type=submit] {
+            background-color: #6a6ff5;
+            color: white;
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        }
+        h1, p, form {
+            text-align: left;
+        }
+        .alreadyy {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 30px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 3.5rem;
+            padding-left: 200px;
+            padding-right: 100px;
+        }
+        .copy {
+            text-align: center;
+        }    
+</style>
+
+</head>
+<body> 
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="table.html">Alt School Courses</a></li>
+                <li><a href="media.html">Media</a></li>
+            </ul>   
+        </nav>
+
+    <div class="container">
+    <div class="firsty">
+        <img class="altlogo" src="https://portal.altschoolafrica.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Ftalentql-inc%2Fimage%2Fupload%2Fv1703728439%2Fstudent-portal%2Facademic_zzg4hi.png&w=1080&q=75" alt="AltSchool's logo">
+<h2>Learn highly sought after skills without hassle.</h2>
+<p class="copy">Tel: 0800ALTSCHOOL</p>
+<p class="copy">©2024 AltSchool Africa. All rights reserved.</p>
+</div>
+
+<div class="secondy">
+            
+    <form>
+        <p class="alreadyy">Already an AltSchooler? <a href="/index.html"> Sign In</a></p>
+    <h1>Sign Up</h1>
+    <p>Take the next steps to apply at AltSchool Africa</p>
+    
+    <label for="name">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter first name">
+
+    <label for="name">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+
+    <label for="gender">Gender</label>  
+    <select id="gender" name="gender" placeholder="Select gender">
+    <option value="male">male</option>
+    <option value="female">female</option>
+    </select>
+    
+    <label for="Date">Date of Birth</label>
+    <input type="date" id="date" name="Date of Birth">
+    
+    <label for="mail">Email Address</label>
+    <input type="email" id="email" name="emailaddress" placeholder="Enter your email">
+
+    <label for="phone number">Phone Number</label>
+    <input type="tel" id=" number" name="phonenumber" placeholder="08154387000">
+    
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" placeholder="Enter your country">
+    
+    <label for="country">State/ City of Residence</label>
+    <input type="text" id="stateofresidence" name="stateofresidence" placeholder="Enter your state of residence">
+    
+    <label for="text">How did you hear about us</label>
+    <input type="text" id="hear" name="How did you hear about us"> 
+    
+    <label for="password">Password</label>
+    <input type="password" id="pwd" name="Password"</p> 
+    
+    <label for="password">Confirm Password</label>
+    <input type="password" id="pwd" name="Password"
+    
+    <br><p>By clicking continue, I agree to <a href="https://www.altschoolafrica.com/terms-and-conditions" target="__blank">Terms of Use<a/> and acknowledge that I have read the <a href="https://www.altschoolafrica.com/privacy-policy" target="__blank">Privacy Policy.</a></p>
+    
+    <label for="Submit">
+    <button type="submit">Submit</button>  
+    </label>
+
+
+    </form>
+</div>
+</div>
+
+</body>
+</html>

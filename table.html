@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+   nav, .menu-items, footer {
+        display: flex;
+  background-color: #aa80f3;
+  justify-content: center;
+  color: white;
+}
+.menu-items li {
+  font-size: 1rem;
+  margin-right: 10rem;
+}
+li {
+  list-style-type: none;
+    }
+
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        thead {
+            background-color: #E5E5E5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F2F2F2;
+        }
+
+        td, th {
+            padding: 8px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        @media(max-width: 800px) {
+            table {
+           
+            thead {
+                display: none;
+            }
+            tr {
+                display: block;
+                margin: 0 0 20px 0;
+            }
+            td {
+                display: block;
+                text-align: right;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:last-child {
+                border-bottom: 1px solid black;
+            }
+            tr:nth-child(odd) {
+                background-color: #F2F2F2;
+            }
+            tr:nth-child(even) {
+                background-color: #FFFFFF;
+                border-width: 3px 0 3px 0;
+                border-style: solid;
+                border-color: #E5E5E5;
+            }
+        }
+        .container {
+        padding: 10px;
+        }
+        .menu-items li {
+          margin-right: 0.5px;
+          font-size: 0.8rem;
+        }
+        .menu-items {
+          justify-content: space-around;
+          gap: 12px;
+        }
+        h1{
+          font-size: 1.3rem;
+          padding: 0;  
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+  
+        <nav class="menu">
+            <ul class="menu-items">
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="form.html">Sign Up</a></li>
+                <li><a href="media.html">Media</a></li>
+          </ul>   
+        </nav>
+        <br>
+
+        <h1 id="top">A table that consists of all the courses and schools that exist in AltSchool Africa.</h1>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th colspan="4" id="courses">Courses</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <th aria-label="School">School of Engineering</th>
+                    <td aria-label="Frontend Engineering">Frontend Engineering</td>
+                    <td aria-label="Backend Engineering">Backend Engineering</td>
+                    <td aria-label="Cloud Engineering">Cloud Engineering</td>
+                    <td aria-label="Cybersecurity">Cybersecurity</td>
+                </tr>
+                <tr>
+                    <th aria-label="School">School of Product</th>
+                    <td aria-label="Product Design">Product Design</td>
+                    <td aria-label="Marketing">Marketing</td>
+                    <td aria-label="Management" colspan="2" id="management">Management</td>
+                </tr>
+                <tr>
+                    <th aria-label="School">School of Data</th>
+                    <td aria-label="Data Analysis">Data Analysis</td>
+                    <td aria-label="Data Science">Data Science</td>
+                    <td aria-label="Data Engineering" colspan="2" id="data-engineering">Data Engineering</td>
+                </tr>
+                <tr>
+                    <th aria-label="School">School of Creative Economy</th>
+                    <td aria-label="Navigating the Music Business in Africa">Navigating the Music Business in Africa: Afrobeats case study</td>
+                    <td aria-label="Content Mastery" colspan="3" id="creators">Content Mastery for African Creators</td>
+                </tr>
+                <tr>
+                    <th aria-label="School">School of Business</th>
+                    <td aria-label="High-Impact Selling">High-Impact Selling: From Prospecting to Closing</td>
+                    <td aria-label="Digital Marketing" colspan="3" id="marketing">Digital Marketing</td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p><i id="bottom">Copyright &copy; <b>OLABISI OYINLOYE.</b> All Rights Reserved</i></p>
+        </footer>
+    </div>
+</body>
+</html>

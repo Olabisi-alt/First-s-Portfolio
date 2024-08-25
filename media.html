@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      * {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1rem;
+  }
+  li {
+  list-style-type: none;
+  }
+nav, .menu-items, footer {
+  display: flex;
+  background-color: #aa80f3;
+  justify-content: center;
+  color: white;
+}
+.menu-items li {
+  font-size: 0.7rem;
+  margin-right: 10rem;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #aa80f3;
+}
+ .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 8rem;
+        color: black;
+      }
+      picture, video, img{
+            max-width: 100%;
+            height: auto;
+        }
+      .container div {
+        border: 2px solid #aa80f3;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+  @media(max-width: 800px) {
+        .container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        }
+        .menu-items li {
+          margin-right: 0.5px;
+          font-size: 1rem;
+        }
+        .menu-items {
+          justify-content: space-around;
+          gap: 12px;
+        }
+        h1{
+          font-size: 1.3rem;
+          padding: 0;  
+        }
+        }
+    </style>
+</head>
+
+<body>
+<nav class="menu">
+  <ul class="menu-items">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="form.html">Sign Up</a></li>
+      <li><a href="table.html">Alt School Courses</a></li>
+</ul>   
+</nav>
+<h1>Storytelling about journey with programming and AltSchool with media</h1>
+
+  <main> 
+    <div class="container">
+    <div class="one">
+<p>The first week of installing VScode; this was how I felt as a new AltSchooler!</p>
+<picture>
+
+  <img class= img1 src="/media/Ass_480/1.png" height="400px"
+    srcset="/media/Ass_480/1.png 480w, 
+            /media/Ass_960/1.png 960w, 
+            /media/Ass_1440/1.png 1440w, 
+            /media/Ass_1920/1.png 1920w"
+            
+  sizes="(max-width: 480px) 480px,
+         (max-width: 960px) 960px,
+         (max-width: 1440px) 1440px,
+         1920px"
+         
+  alt="girl sitting in front of a computer">
+      </picture>
+    </div>
+
+    <div class="two">
+      <p>I felt so cool this week. This music describes completely how i feel!</p>
+    <audio src="/media/music1.mp3"controls></audio>
+    </div>
+    
+    <div class="three">
+<p>The first month after starting classes, i stopped feeling like a pro but frustrated at everything! I was like this🤬🤬🤯🤯🤯🤯</p>
+<picture>
+
+  <img class= img2 src="/media/Ass_480/2.png" height="400px"
+    srcset="/media/Ass_480/2.png 480w, 
+            /media/Ass_960/2.png 960w, 
+            /media/Ass_1440/2.png 1440w, 
+            /media/Ass_1920/2.png 1920w"
+            
+  sizes="(max-width: 480px) 480px,
+         (max-width: 960px) 960px,
+         (max-width: 1440px) 1440px,
+         1920px"
+         
+  alt="first image">
+      </picture>
+    </div>
+
+    <div class="four">
+      <p>This describes how i felt after the first month! </p>
+      <video class="video" src="/media/video1.mp4" controls height="300px"></video>
+    </div>
+  
+<div class="five">
+<p>Presently, omo I no know anymore.I live and dream for programming, but Javascript keeps showong coconut head so my head is on fire</p>
+<picture>
+
+  <img class= img3 src="/media/Ass_480/3.png" height="400px"
+    srcset="/media/Ass_480/3.png 480w, 
+            /media/Ass_960/3.png 960w, 
+            /media/Ass_1440/3.png 1440w, 
+            /media/Ass_1920/3.png 1920w"
+            
+  sizes="(max-width: 480px) 480px,
+         (max-width: 960px) 960px,
+         (max-width: 1440px) 1440px,
+         1920px"
+         
+  alt="first image">
+      </picture>
+    </div>
+
+      <div class="six">
+        <p>Presently, i can conveniently say all i dream about is programming, thanks to the shege from CSS & JavaSCript!</p>
+        <img class="video" src="/media/gif1.gif" controls height="300px"></img>
+
+      </div>
+    </div> 
+</main> 
+
+<footer>
+    <p><i id="bottom">Copyright &copy; <b>OLABISI OYINLOYE.</b> All Right Reserved</i></p>
+</footer>
+
+</body>
+</html>
